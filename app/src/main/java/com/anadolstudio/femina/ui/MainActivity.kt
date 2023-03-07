@@ -1,7 +1,8 @@
-package com.anadolstudio.femina
+package com.anadolstudio.femina.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.anadolstudio.femina.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
