@@ -1,4 +1,4 @@
-package com.anadolstudio.femina.ui.ui_data
+package com.anadolstudio.femina.ui.main
 
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes

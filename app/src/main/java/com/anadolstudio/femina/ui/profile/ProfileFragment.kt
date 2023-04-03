@@ -1,7 +1,10 @@
 package com.anadolstudio.femina.ui.profile
 
+import android.os.Bundle
+import android.view.View
 import com.anadolstudio.femina.R
 import com.anadolstudio.femina.ui.base.fragment.BaseFragment
+import com.anadolstudio.femina.utils.viewmodel.obtainViewModel
 
 class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
 
@@ -9,7 +12,12 @@ class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
         fun newInstance(): ProfileFragment = ProfileFragment()
     }
 
-    override fun onBackPressedInternal(): Boolean {
-        TODO("Not yet implemented")
+    private lateinit var viewModel: ProfileViewModel
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        viewModel = obtainViewModel(ProfileViewModel.Factory())
     }
+
+    override fun onBackPressedInternal(): Boolean = true.also { viewModel.exit() }
 }

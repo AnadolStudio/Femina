@@ -1,6 +1,7 @@
 package com.anadolstudio.femina.di.subcomponent.home
 
 import com.anadolstudio.femina.ui.home.HomeContainerFragment
+import com.anadolstudio.femina.ui.home.HomeViewModel
 import dagger.Subcomponent
 
 @HomeScope
@@ -15,5 +16,6 @@ interface HomeComponent {
     }
 
     fun inject(entry: HomeContainerFragment)
+    fun inject(entry: HomeViewModel.Factory)
 
 }

@@ -1,6 +1,7 @@
 package com.anadolstudio.femina.di.subcomponent.calendar
 
 import com.anadolstudio.femina.ui.calendar.CalendarContainerFragment
+import com.anadolstudio.femina.ui.calendar.CalendarViewModel
 import dagger.Subcomponent
 
 @CalendarScope
@@ -15,5 +16,6 @@ interface CalendarComponent {
     }
 
     fun inject(entry: CalendarContainerFragment)
+    fun inject(entry: CalendarViewModel.Factory)
 
 }
