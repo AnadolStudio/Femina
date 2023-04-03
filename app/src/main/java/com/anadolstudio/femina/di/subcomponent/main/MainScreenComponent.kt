@@ -6,9 +6,9 @@ import dagger.Subcomponent
 
 @MainScreenScope
 @Subcomponent(
-    modules = [
-        MainScreenNavigationModule::class
-    ]
+        modules = [
+            MainScreenNavigationModule::class
+        ]
 )
 interface MainScreenComponent {
 

@@ -14,13 +14,13 @@ import javax.inject.Inject
 import javax.inject.Named
 
 class MainViewModel(
-    private val context: Context,
-    private val router: BottomNavigationRouter,
-    private val rootRouter: RootRouter,
+        private val context: Context,
+        private val router: BottomNavigationRouter,
+        private val rootRouter: RootRouter,
 ) : SimpleViewModel<MenuItem>() {
 
     init {
-        _state.value?.let { updateMenuItem(MenuItem.HOME) }
+        _state.value ?: updateMenuItem(MenuItem.HOME)
     }
 
     private fun updateMenuItem(menuItem: MenuItem, isBottomMenuItemClick: Boolean = false) {
@@ -41,8 +41,8 @@ class MainViewModel(
 
     fun onBottomMenuItemSelected(menuItem: MenuItem) {
         updateMenuItem(
-            menuItem = menuItem,
-            isBottomMenuItemClick = true
+                menuItem = menuItem,
+                isBottomMenuItemClick = true
         )
     }
 
@@ -70,9 +70,9 @@ class MainViewModel(
             DI.app.mainScreen.provideComponent().inject(this)
 
             return MainViewModel(
-                context = context,
-                router = router,
-                rootRouter = rootRouter
+                    context = context,
+                    router = router,
+                    rootRouter = rootRouter
             ) as T
         }
     }

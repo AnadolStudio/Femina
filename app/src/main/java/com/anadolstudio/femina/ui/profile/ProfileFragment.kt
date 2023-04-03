@@ -5,7 +5,7 @@ import com.anadolstudio.femina.ui.base.fragment.BaseFragment
 
 class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
 
-    companion object{
+    companion object {
         fun newInstance(): ProfileFragment = ProfileFragment()
     }
 

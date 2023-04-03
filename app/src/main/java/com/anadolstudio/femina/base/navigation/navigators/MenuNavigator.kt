@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentManager
 import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.command.AddLocalScreen
 import com.anadolstudio.femina.base.navigation.command.ReplaceAndReset
-import com.anadolstudio.femina.base.navigation.router.RouterProvider
 import com.anadolstudio.femina.ui.base.fragment.BaseFragmentContainer
 import com.anadolstudio.femina.ui.calendar.CalendarContainerFragment
 import com.anadolstudio.femina.ui.home.HomeContainerFragment
@@ -65,7 +64,7 @@ class MenuNavigator(
     }
 
     private fun replaceScreen(command: Replace, fragment: BaseFragmentContainer) {
-        replace(toDetach = getMenuFragmentList(fragment),toAttach = fragment)
+        replace(toDetach = getMenuFragmentList(fragment), toAttach = fragment)
 
         if (command is ReplaceAndReset) fragment.cleanScreenStack()
     }

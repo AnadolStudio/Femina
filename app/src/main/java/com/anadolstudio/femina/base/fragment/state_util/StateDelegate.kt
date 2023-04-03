@@ -3,8 +3,8 @@ package com.anadolstudio.femina.base.fragment.state_util
 import kotlin.properties.Delegates
 
 open class StateDelegate<T>(
-    vararg states: State<T>,
-    initialState: InitialState<T> = AllHideInitialState()
+        vararg states: State<T>,
+        initialState: InitialState<T> = AllHideInitialState()
 ) where T : Enum<T> {
 
     init {

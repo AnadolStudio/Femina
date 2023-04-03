@@ -17,7 +17,7 @@ import ru.terrakok.cicerone.commands.SystemMessage;
  * FIXME: Это копия стандартного класса из Cicerone,
  * с одмин изменением: импорты фрагментов v4 заменены на androidx.
  * Нужно удалить с обновлением Cicerone или с переходом на другую навигацию.
- *
+ * <p>
  * {@link Navigator} implementation based on the support fragments.
  * <p>
  * {@link BackTo} navigation command will return to the root if
@@ -29,8 +29,8 @@ import ru.terrakok.cicerone.commands.SystemMessage;
  * </p>
  */
 public abstract class AndroidxFragmentNavigator implements Navigator {
-    private FragmentManager fragmentManager;
-    private int containerId;
+    private final FragmentManager fragmentManager;
+    private final int containerId;
     protected LinkedList<String> localStackCopy;
 
     /**
@@ -54,9 +54,9 @@ public abstract class AndroidxFragmentNavigator implements Navigator {
      * @param fragmentTransaction fragment transaction
      */
     protected void setupFragmentTransactionAnimation(Command command,
-            Fragment currentFragment,
-            Fragment nextFragment,
-            FragmentTransaction fragmentTransaction) {
+                                                     Fragment currentFragment,
+                                                     Fragment nextFragment,
+                                                     FragmentTransaction fragmentTransaction) {
     }
 
     @Override
@@ -238,6 +238,7 @@ public abstract class AndroidxFragmentNavigator implements Navigator {
     /**
      * Called when we tried to back to some specific screen (via {@link BackTo} command),
      * but didn't found it.
+     *
      * @param screenKey screen key
      */
     protected void backToUnexisting(String screenKey) {

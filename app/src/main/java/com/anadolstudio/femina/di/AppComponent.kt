@@ -13,10 +13,10 @@ import dagger.Component
 
 @AppScope
 @Component(
-    modules = [
-        AppModule::class,
-        RootNavigationModule::class,
-    ]
+        modules = [
+            AppModule::class,
+            RootNavigationModule::class,
+        ]
 )
 interface AppComponent {
 

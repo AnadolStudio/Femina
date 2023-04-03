@@ -7,6 +7,6 @@ interface BottomNavigationFragment {
 
     fun navigateToItem(menuItem: MenuItem)
 
-    fun getMenuItemView(menuItem: MenuItem) : View?
+    fun getMenuItemView(menuItem: MenuItem): View?
 
 }

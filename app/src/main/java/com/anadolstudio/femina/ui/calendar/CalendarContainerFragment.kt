@@ -8,7 +8,6 @@ import com.anadolstudio.femina.base.navigation.navigators.BottomNavigator
 import com.anadolstudio.femina.base.navigation.router.BottomNavigationRouter
 import com.anadolstudio.femina.di.DI
 import com.anadolstudio.femina.ui.base.fragment.BaseFragmentContainer
-import com.anadolstudio.femina.ui.statistic.StatisticContainerFragment
 import ru.terrakok.cicerone.Navigator
 import ru.terrakok.cicerone.NavigatorHolder
 import ru.terrakok.cicerone.Router

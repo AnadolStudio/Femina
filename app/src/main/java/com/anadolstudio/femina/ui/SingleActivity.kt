@@ -59,7 +59,7 @@ class SingleActivity : BaseActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-//        setTheme(R.style.AppTheme) // TODO
+        setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_single)
         DI.app.provideComponent().inject(this)

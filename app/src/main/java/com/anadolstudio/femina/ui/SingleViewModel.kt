@@ -18,7 +18,7 @@ class SingleViewModel(
     }
 
     @Suppress("UNCHECKED_CAST")
-    class Factory() : ViewModelProvider.NewInstanceFactory() {
+    class Factory : ViewModelProvider.NewInstanceFactory() {
 
         @field:[Inject Named(Screens.Root.QUALIFIER)]
         internal lateinit var router: RootRouter

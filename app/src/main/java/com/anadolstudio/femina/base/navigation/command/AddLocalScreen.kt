@@ -6,4 +6,4 @@ class AddLocalScreen(
         val rootScreenKey: String,
         val localScreenKey: String,
         val localScreenData: Any? = null
-): Command
+) : Command

@@ -5,7 +5,7 @@ import com.anadolstudio.femina.ui.base.fragment.BaseFragment
 
 class CalendarFragment : BaseFragment(R.layout.fragment_calendar) {
 
-    companion object{
+    companion object {
         fun newInstance(): CalendarFragment = CalendarFragment()
     }
 

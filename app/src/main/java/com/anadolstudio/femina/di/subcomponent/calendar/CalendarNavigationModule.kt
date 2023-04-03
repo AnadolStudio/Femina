@@ -2,8 +2,6 @@ package com.anadolstudio.femina.di.subcomponent.calendar
 
 import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.router.BottomNavigationRouter
-import com.anadolstudio.femina.base.navigation.router.RootRouter
-import com.anadolstudio.femina.di.subcomponent.calendar.CalendarScope
 import dagger.Module
 import dagger.Provides
 import ru.terrakok.cicerone.Cicerone

@@ -12,7 +12,7 @@ object DI {
 
     private lateinit var context: Context
 
-    fun init(context: Context, ) {
+    fun init(context: Context) {
         DI.context = context
     }
 }

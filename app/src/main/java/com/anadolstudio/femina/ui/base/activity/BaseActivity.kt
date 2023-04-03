@@ -6,7 +6,6 @@ import android.view.View
 import com.anadolstudio.femina.base.activity.CoreBaseSingleActivity
 import com.anadolstudio.femina.base.navigation.backpress.OnBackPressable
 import com.anadolstudio.femina.base.navigation.backpress.OnBackPressedListener
-import java.util.LinkedHashSet
 
 abstract class BaseActivity : CoreBaseSingleActivity(), OnBackPressable {
 

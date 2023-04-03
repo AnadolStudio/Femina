@@ -2,7 +2,6 @@ package com.anadolstudio.femina.di
 
 import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.router.RootRouter
-import com.anadolstudio.femina.di.AppScope
 import dagger.Module
 import dagger.Provides
 import ru.terrakok.cicerone.Cicerone

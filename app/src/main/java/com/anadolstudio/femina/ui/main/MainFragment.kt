@@ -38,10 +38,10 @@ class MainFragment : BaseFragment(R.layout.fragment_main), BottomNavigationFragm
     }
 
     private val bottomMenuItems = listOf(
-        MenuItem.CALENDAR,
-        MenuItem.HOME,
-        MenuItem.STATISTIC,
-        MenuItem.PROFILE
+            MenuItem.HOME,
+            MenuItem.CALENDAR,
+            MenuItem.STATISTIC,
+            MenuItem.PROFILE
     )
 
     private lateinit var viewModel: MainViewModel
@@ -80,7 +80,7 @@ class MainFragment : BaseFragment(R.layout.fragment_main), BottomNavigationFragm
     }
 
     override fun getMenuItemView(menuItem: MenuItem): View? =
-        binding.fragmentMainBottomNavigation.getViewAtPosition(bottomMenuItems.indexOf(menuItem))
+            binding.fragmentMainBottomNavigation.getViewAtPosition(bottomMenuItems.indexOf(menuItem))
 
     override fun onBackPressedInternal(): Boolean = true.also { viewModel.exit() }
 
