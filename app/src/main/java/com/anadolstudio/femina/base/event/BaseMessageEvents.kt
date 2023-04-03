@@ -1,6 +1,5 @@
 package com.anadolstudio.femina.base.event
 
-
 import com.anadolstudio.femina.base.livedata.SingleError
 import com.anadolstudio.femina.base.livedata.SingleMessage
 
