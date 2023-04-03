@@ -1,7 +1,7 @@
 package com.anadolstudio.femina.ui.base.fragment
 
 import android.view.View
-import com.anadolstudio.femina.ui.ui_data.MenuItem
+import com.anadolstudio.femina.ui.main.MenuItem
 
 interface BottomNavigationFragment {
 

@@ -10,7 +10,6 @@ import com.anadolstudio.femina.databinding.FragmentMainBinding
 import com.anadolstudio.femina.di.DI
 import com.anadolstudio.femina.ui.base.fragment.BaseFragment
 import com.anadolstudio.femina.ui.base.fragment.BottomNavigationFragment
-import com.anadolstudio.femina.ui.ui_data.MenuItem
 import com.anadolstudio.femina.utils.viewmodel.observe
 import com.anadolstudio.femina.utils.viewmodel.obtainViewModel
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation
