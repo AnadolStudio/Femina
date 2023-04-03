@@ -1,7 +1,6 @@
 package com.anadolstudio.femina.di.subcomponent.profile
 
 import com.anadolstudio.femina.ui.profile.ProfileContainerFragment
-import com.anadolstudio.femina.ui.profile.ProfileFragment
 import com.anadolstudio.femina.ui.profile.ProfileViewModel
 import dagger.Subcomponent
 
