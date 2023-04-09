@@ -2,12 +2,11 @@ package com.anadolstudio.femina.ui
 
 import android.graphics.Color
 import android.os.Bundle
-import android.util.TypedValue
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.anadolstudio.femina.R
 import com.github.appintro.AppIntro
-import com.github.appintro.AppIntroFragment
+import com.github.appintro.AppIntroCustomLayoutFragment.Companion.newInstance
 
 class OnboardingActivity : AppIntro() {
 
@@ -18,10 +17,10 @@ class OnboardingActivity : AppIntro() {
         setIndicator()
         setInterfaceColors()
 
-        addOnboardingSlide("Menstrual Calendar", "Simple and convenient calendar for period tracking")
-        addOnboardingSlide("Menstrual Calendar", "Track your period and chronicle your daily symptoms")
-        addOnboardingSlide("Menstrual Calendar", "Gather your statistics and improve the quality of your life!")
-        addOnboardingSlide("Lunar Calendar", "Track the current moon phase and plan your day")
+        addSlide(newInstance(R.layout.slide_layout))
+        addSlide(newInstance(R.layout.slide_layout))
+        addSlide(newInstance(R.layout.slide_layout))
+        addSlide(newInstance(R.layout.slide_layout))
     }
 
     override fun onSkipPressed(currentFragment: Fragment?) {
@@ -38,17 +37,8 @@ class OnboardingActivity : AppIntro() {
         makeFinalToast("Onboarding done")
     }
 
-    private fun addOnboardingSlide(title: String, description: String) {
-        addSlide(AppIntroFragment.createInstance(
-            title = title,
-            description = description,
-            titleColorRes = R.color.purple_700,
-            descriptionColorRes = R.color.black,
-        ))
-    }
-
     private fun setInterfaceColors() {
-        val color = getThemeColor(androidx.appcompat.R.attr.colorPrimary)
+        val color = R.color.purple_700
         setNextArrowColor(color)
         setColorSkipButton(color)
         setBackArrowColor(color)
@@ -63,11 +53,5 @@ class OnboardingActivity : AppIntro() {
 
     private fun makeFinalToast(text: String) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
-    }
-
-    private fun getThemeColor(resId: Int): Int {
-        val typedValue = TypedValue()
-        theme.resolveAttribute(resId, typedValue, true)
-        return typedValue.data
     }
 }
