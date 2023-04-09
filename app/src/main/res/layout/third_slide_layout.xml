@@ -12,7 +12,7 @@
         android:layout_marginLeft="45sp"
         android:layout_marginRight="45sp"
         android:layout_marginBottom="15sp"
-        android:text="Menstrual Calendar"
+        android:text="@string/menstrual_calendar"
         android:textAlignment="center"
         android:textColor="@color/purple_500"
         android:textSize="34sp" />
@@ -20,11 +20,11 @@
     <TextView
         android:id="@+id/descriptionText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="45sp"
-        android:layout_marginRight="45sp"
+        android:layout_height="90sp"
+        android:layout_marginLeft="35sp"
+        android:layout_marginRight="35sp"
         android:layout_marginBottom="105sp"
-        android:text="Simple and convinient calendar for period tracking"
+        android:text="@string/third_slide_text"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp" />
