@@ -14,6 +14,7 @@ import com.github.appintro.AppIntroCustomLayoutFragment
 
 class OnboardingActivity : AppIntro() {
 
+    override val layoutId = R.layout.custom_intro_layout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,13 +43,13 @@ class OnboardingActivity : AppIntro() {
     }
 
     private fun setInterfaceColors() {
-        val color = R.color.purple_700
-        setNextArrowColor(color)
-        setColorSkipButton(color)
-        setBackArrowColor(color)
-        setColorDoneText(color)
+        val purple = R.color.purple_700
+        setNextArrowColor(purple)
+        setColorSkipButton(purple)
+        setBackArrowColor(purple)
+        setColorDoneText(purple)
 
-        setIndicatorColor(R.color.purple_700, Color.GRAY)
+        setIndicatorColor(purple, Color.GRAY)
     }
 
     private fun setUpOnboardingMenu() {
@@ -57,7 +58,7 @@ class OnboardingActivity : AppIntro() {
 
         val progressBar = findViewById<ViewGroup>(com.github.appintro.R.id.indicator_container)
         val layoutParams = progressBar.layoutParams
-        layoutParams.width = 500
+        layoutParams.width = 900
         progressBar.layoutParams = layoutParams
 
 
