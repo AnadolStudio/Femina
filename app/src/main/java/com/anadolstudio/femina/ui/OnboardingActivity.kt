@@ -1,12 +1,16 @@
 package com.anadolstudio.femina.ui
 
 import android.graphics.Color
+import android.graphics.drawable.Drawable
 import android.os.Bundle
+import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
+import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.anadolstudio.femina.R
 import com.github.appintro.AppIntro
-import com.github.appintro.AppIntroCustomLayoutFragment.Companion.newInstance
+import com.github.appintro.AppIntroCustomLayoutFragment
 
 class OnboardingActivity : AppIntro() {
 
@@ -14,13 +18,13 @@ class OnboardingActivity : AppIntro() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setIndicator()
+        setUpOnboardingMenu()
         setInterfaceColors()
 
-        addSlide(newInstance(R.layout.slide_layout))
-        addSlide(newInstance(R.layout.slide_layout))
-        addSlide(newInstance(R.layout.slide_layout))
-        addSlide(newInstance(R.layout.slide_layout))
+        addOnboardingSlide(R.layout.first_slide_layout)
+        addOnboardingSlide(R.layout.second_slide_layout)
+        addOnboardingSlide(R.layout.third_slide_layout)
+        addOnboardingSlide(R.layout.fourth_slide_layout)
     }
 
     override fun onSkipPressed(currentFragment: Fragment?) {
@@ -43,12 +47,27 @@ class OnboardingActivity : AppIntro() {
         setColorSkipButton(color)
         setBackArrowColor(color)
         setColorDoneText(color)
+
+        setIndicatorColor(R.color.purple_700, Color.GRAY)
     }
 
-    private fun setIndicator() {
+    private fun setUpOnboardingMenu() {
         isIndicatorEnabled = true
         setProgressIndicator()
-        setIndicatorColor(Color.BLACK, Color.GRAY)
+
+        val progressBar = findViewById<ViewGroup>(com.github.appintro.R.id.indicator_container)
+        val layoutParams = progressBar.layoutParams
+        layoutParams.width = 500
+        progressBar.layoutParams = layoutParams
+
+
+        val skipButton = findViewById<Button>(com.github.appintro.R.id.skip)
+        val drawable: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.button_outline, null)
+        skipButton.background = drawable
+    }
+
+    private fun addOnboardingSlide(layoutResId: Int) {
+        addSlide(AppIntroCustomLayoutFragment.Companion.newInstance(layoutResId))
     }
 
     private fun makeFinalToast(text: String) {
