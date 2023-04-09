@@ -62,8 +62,8 @@ class OnboardingActivity : AppIntro() {
 
 
         val skipButton = findViewById<Button>(com.github.appintro.R.id.skip)
-        val drawable: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.button_outline, null)
-        skipButton.background = drawable
+        val buttonOutline: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.button_outline, null)
+        skipButton.background = buttonOutline
     }
 
     private fun addOnboardingSlide(layoutResId: Int) {
