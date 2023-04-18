@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Femina</string>
+    
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_statistic">Statistic</string>
+    <string name="bottom_navigation_calendar">Calendar</string>
+    <string name="bottom_navigation_profile">Profile</string>
+    
     <string name="menstrual_calendar">Menstrual Calendar</string>
     <string name="lunar_calendar">Lunar Calendar</string>
     <string name="first_slide_text">Simple and convenient calendar for period tracking</string>
