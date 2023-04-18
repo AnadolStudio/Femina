@@ -1,12 +1,8 @@
 package com.anadolstudio.femina.ui
 
 import android.graphics.Color
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.view.ViewGroup
-import android.widget.Button
 import android.widget.Toast
-import androidx.core.content.res.ResourcesCompat
 import androidx.fragment.app.Fragment
 import com.anadolstudio.femina.R
 import com.github.appintro.AppIntro
@@ -19,7 +15,7 @@ class OnboardingActivity : AppIntro() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setUpOnboardingMenu()
+        setUpProgressBar()
         setInterfaceColors()
 
         addOnboardingSlide(R.layout.first_slide_layout)
@@ -44,27 +40,14 @@ class OnboardingActivity : AppIntro() {
 
     private fun setInterfaceColors() {
         val purple = R.color.purple_700
-        setNextArrowColor(purple)
-        setColorSkipButton(purple)
         setBackArrowColor(purple)
-        setColorDoneText(purple)
 
         setIndicatorColor(purple, Color.GRAY)
     }
 
-    private fun setUpOnboardingMenu() {
+    private fun setUpProgressBar() {
         isIndicatorEnabled = true
         setProgressIndicator()
-
-        val progressBar = findViewById<ViewGroup>(com.github.appintro.R.id.indicator_container)
-        val layoutParams = progressBar.layoutParams
-        layoutParams.width = 900
-        progressBar.layoutParams = layoutParams
-
-
-        val skipButton = findViewById<Button>(com.github.appintro.R.id.skip)
-        val buttonOutline: Drawable? = ResourcesCompat.getDrawable(resources, R.drawable.button_outline, null)
-        skipButton.background = buttonOutline
     }
 
     private fun addOnboardingSlide(layoutResId: Int) {
