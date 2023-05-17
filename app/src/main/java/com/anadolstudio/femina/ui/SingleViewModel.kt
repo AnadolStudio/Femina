@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.router.RootRouter
 import com.anadolstudio.femina.di.DI
-import com.anadolstudio.femina.utils.viewmodel.BaseViewModel
+import com.anadolstudio.femina.base.viewmodel.BaseViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
@@ -14,7 +14,7 @@ class SingleViewModel(
 ) : BaseViewModel() {
 
     init {
-        router.newRootScreen(Screens.Root.MAIN)
+        router.newRootScreen(Screens.Root.ONBOARDING)
     }
 
     @Suppress("UNCHECKED_CAST")

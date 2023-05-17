@@ -11,7 +11,7 @@ import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.navigators.RootNavigator
 import com.anadolstudio.femina.di.DI
 import com.anadolstudio.femina.ui.base.activity.BaseActivity
-import com.anadolstudio.femina.utils.viewmodel.obtainViewModel
+import com.anadolstudio.femina.base.viewmodel.obtainViewModel
 import ru.terrakok.cicerone.Navigator
 import ru.terrakok.cicerone.NavigatorHolder
 import javax.inject.Inject

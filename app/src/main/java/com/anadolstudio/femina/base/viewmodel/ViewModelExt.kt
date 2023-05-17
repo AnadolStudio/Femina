@@ -1,4 +1,4 @@
-package com.anadolstudio.femina.utils.viewmodel
+package com.anadolstudio.femina.base.viewmodel
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity

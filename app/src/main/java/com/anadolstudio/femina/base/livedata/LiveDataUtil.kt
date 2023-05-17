@@ -2,7 +2,7 @@ package com.anadolstudio.femina.base.livedata
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.anadolstudio.femina.utils.viewmodel.BaseViewState
+import com.anadolstudio.femina.base.viewmodel.BaseViewState
 
 fun <T> MutableLiveData<T>.toImmutable() = this as LiveData<T>
 

@@ -14,9 +14,9 @@ import com.anadolstudio.femina.base.livedata.SingleCustomEvent
 import com.anadolstudio.femina.base.livedata.SingleError
 import com.anadolstudio.femina.base.livedata.SingleEvent
 import com.anadolstudio.femina.base.livedata.SingleMessage
-import com.anadolstudio.femina.utils.viewmodel.BaseViewState
-import com.anadolstudio.femina.utils.viewmodel.StateViewModel
-import com.anadolstudio.femina.utils.viewmodel.observe
+import com.anadolstudio.femina.base.viewmodel.BaseViewState
+import com.anadolstudio.femina.base.viewmodel.StateViewModel
+import com.anadolstudio.femina.base.viewmodel.observe
 import com.google.android.material.snackbar.Snackbar
 
 abstract class CoreBaseFragment<ViewState, ViewModel : StateViewModel<ViewState>>(@LayoutRes private val layoutId: Int) : Fragment() {

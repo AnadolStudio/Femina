@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.anadolstudio.femina.R
 import com.anadolstudio.femina.ui.base.fragment.BaseFragment
-import com.anadolstudio.femina.utils.viewmodel.obtainViewModel
+import com.anadolstudio.femina.base.viewmodel.obtainViewModel
 
 class CalendarFragment : BaseFragment(R.layout.fragment_calendar) {
 
