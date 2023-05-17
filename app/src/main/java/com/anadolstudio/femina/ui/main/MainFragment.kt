@@ -10,8 +10,8 @@ import com.anadolstudio.femina.databinding.FragmentMainBinding
 import com.anadolstudio.femina.di.DI
 import com.anadolstudio.femina.ui.base.fragment.BaseFragment
 import com.anadolstudio.femina.ui.base.fragment.BottomNavigationFragment
-import com.anadolstudio.femina.utils.viewmodel.observe
-import com.anadolstudio.femina.utils.viewmodel.obtainViewModel
+import com.anadolstudio.femina.base.viewmodel.observe
+import com.anadolstudio.femina.base.viewmodel.obtainViewModel
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigation
 import com.aurelhubert.ahbottomnavigation.AHBottomNavigationItem
 import ru.terrakok.cicerone.Navigator

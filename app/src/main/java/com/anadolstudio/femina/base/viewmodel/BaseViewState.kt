@@ -1,4 +1,4 @@
-package com.anadolstudio.femina.utils.viewmodel
+package com.anadolstudio.femina.base.viewmodel
 
 sealed class BaseViewState<Data> {
 

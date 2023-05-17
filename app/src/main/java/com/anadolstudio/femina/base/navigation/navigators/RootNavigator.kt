@@ -5,6 +5,7 @@ import com.anadolstudio.femina.base.navigation.FixSupportFragmentNavigator
 import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.ui.base.activity.BaseActivity
 import com.anadolstudio.femina.ui.main.MainFragment
+import com.anadolstudio.femina.ui.onboarding.FirstOnboardingFragment
 
 class RootNavigator(
         private val activity: BaseActivity,
@@ -16,6 +17,7 @@ class RootNavigator(
 
     override fun createFragment(screenKey: String?, data: Any?): Fragment = when (screenKey) {
         Screens.Root.MAIN -> MainFragment.newInstance()
+        Screens.Root.ONBOARDING -> FirstOnboardingFragment.newInstance()
         else -> throw IllegalArgumentException("Unknown screen $screenKey")
     }
 

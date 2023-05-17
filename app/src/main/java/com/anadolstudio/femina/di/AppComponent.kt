@@ -8,6 +8,7 @@ import com.anadolstudio.femina.di.subcomponent.profile.ProfileComponent
 import com.anadolstudio.femina.di.subcomponent.statistic.StatisticComponent
 import com.anadolstudio.femina.ui.SingleActivity
 import com.anadolstudio.femina.ui.SingleViewModel
+import com.anadolstudio.femina.ui.onboarding.FirstOnboardingViewModel
 import dagger.BindsInstance
 import dagger.Component
 
@@ -37,5 +38,7 @@ interface AppComponent {
 
     fun inject(entry: SingleActivity)
     fun inject(entry: SingleViewModel.Factory)
+
+    fun inject(entry: FirstOnboardingViewModel.Factory)
 
 }

@@ -1,4 +1,4 @@
-package com.anadolstudio.femina.utils.viewmodel
+package com.anadolstudio.femina.base.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import com.anadolstudio.femina.base.livedata.onNextContent

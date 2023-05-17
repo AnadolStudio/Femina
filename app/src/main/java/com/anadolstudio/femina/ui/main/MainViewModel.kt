@@ -8,7 +8,7 @@ import com.anadolstudio.femina.base.navigation.Screens
 import com.anadolstudio.femina.base.navigation.router.BottomNavigationRouter
 import com.anadolstudio.femina.base.navigation.router.RootRouter
 import com.anadolstudio.femina.di.DI
-import com.anadolstudio.femina.utils.viewmodel.SimpleViewModel
+import com.anadolstudio.femina.base.viewmodel.SimpleViewModel
 import javax.inject.Inject
 import javax.inject.Named
 
