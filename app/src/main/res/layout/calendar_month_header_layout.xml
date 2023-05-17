@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/calendar_month_header_month_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingHorizontal="4dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Март 2020" />
+
+    <LinearLayout
+        android:id="@+id/calendar_month_header_legend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_month_header_month_title"
+        tools:ignore="HardcodedText">
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_first_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ПН" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_second_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ВТ" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_third_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="СР" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_fourth_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ЧТ" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_fifth_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ПТ" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_sixth_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="СБ" />
+
+        <TextView
+            android:id="@+id/calendar_month_header_legend_seventh_day"
+            style="@style/CalendarDayLegend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="ВС" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

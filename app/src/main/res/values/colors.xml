@@ -11,4 +11,7 @@
     <color name="accentColor">#FF6200EE</color>
     <color name="onboardingSecondaryProgressColor">#B6B3B3</color>
 
+    <color name="light_gray">#989FA6</color>
+    <color name="light_ui_background">#F5F6F7</color>
+
 </resources>
